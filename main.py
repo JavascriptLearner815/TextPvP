@@ -2,13 +2,16 @@ player = {
     "hp": 20,
     "maxhp": 20
 }
+encountered = False
 # valid_hp_number = [1,2,3,4,5]
 
 def game():
     if player["hp"] <= 0:
         return print("You died!")
 
-    
+    if not encountered:
+        move = input("You encounter a goblin. What will you do? (punch, kick, hide) ")
+        # move stuff
 
     # decrease_hp = input(f"Your HP is {player['hp']}. Decrease HP? ")
 
