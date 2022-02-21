@@ -3,6 +3,7 @@ player = {
     "maxhp": 20
 }
 punch_times = 0
+goblin_tolerance = 2
 # valid_hp_number = [1,2,3,4,5]
 
 def game(punch_times):
@@ -14,7 +15,6 @@ def game(punch_times):
         print("You punch the goblin!")
         punch_times += 1
         print(f"You have punched him {punch_times} times!")
-          
 
     # decrease_hp = input(f"Your HP is {player['hp']}. Decrease HP? ")
 
