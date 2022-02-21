@@ -2,11 +2,13 @@ player = {
     "hp": 20,
     "maxhp": 20
 }
-valid_hp_number = [1,2,3,4,5]
+# valid_hp_number = [1,2,3,4,5]
 
 def game():
     if player["hp"] <= 0:
         return print("You died!")
+
+    
 
     # decrease_hp = input(f"Your HP is {player['hp']}. Decrease HP? ")
 
