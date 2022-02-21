@@ -5,7 +5,7 @@ player = {
 punch_times = 0
 # valid_hp_number = [1,2,3,4,5]
 
-def game():
+def game(punch_times):
     if player["hp"] <= 0:
         return print("You died!")
 
@@ -24,6 +24,9 @@ def game():
             # player["hp"] -= decrease_amount
         # else:
             # print("You can only decrease your HP by 1-5!")
-    game() # Keep running the game
 
-game()
+    return punch_times
+
+while True:
+    punch_times = game(punch_times)
+    
